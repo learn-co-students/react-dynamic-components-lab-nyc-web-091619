@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-// are we missing an import?
+import Comment from './Comment.js'
+// are we missing an import? yes, we need to import Comment class
 
 export default class BlogPost extends Component {
   render() {
@@ -19,11 +20,10 @@ export default class BlogPost extends Component {
         I won't let you tilt me<br/>
         You only grew accustomed to the salt<br/>
         I was born in it<br/>
-        {/* (remove the comment ticks and their surrounding brackets)
+        {/* Change index of array to correspond to each comment in the comments array */}
         <Comment commentText={comments[0]} />
-        <Comment commentText={comments[0]} />
-        <Comment commentText={comments[0]} />
-        */}
+        <Comment commentText={comments[1]} />
+        <Comment commentText={comments[2]} />
       </div>
     );
   }
